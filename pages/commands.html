@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ddevice-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png?v=2">
+    <title>Ahega0</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="/">
+                <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp;
+                <span>Ahega0</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#/">Commands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./team.html">Staff</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Links
+                        </a>
+                        <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/oauth2/authorize?client_id=841777441117831189&scope=bot&permissions=8589934583" target="_blank">Invite
+                                    Bot</a>
+                            </li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.gg/NRgs4zA2" target="_blank">Support
+                                    Server</a></li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="./faq.html">FAQ</a></li>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-muted font-weight-bold"
+                                    href="https://github.com/ehAsuna" target="_blank">Official Github</a></li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="">View
+                                    Documentation</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="jumbotron text-center bg-transparent">
+        <h1 class="commandstitle">Commands</h1>
+        <p class="lead commandssub">Ahega0's Commands</p>
+        <hr>
+        <input id="myInput" type="text" class="searchbox" placeholder="Search">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="border"></div>
+        <br>
+        <br>
+        <br>
+        <div id="myCmd">
+            <button type="button" class="collapsible">command<span> - Enables or disables a command for this guild</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Configuration</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++command</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++command<"enable" or "disable"> <Command Name></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">help<span> - Displays this bot's commands</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Help</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++help</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++help[command]</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">language<span> - Displays or sets the language for this Discord server</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Configuration</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++language</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++language[Language]</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">prefix<span> - Displays or sets the prefix for the current guild</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Configuration</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++prefix</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++prefix[New Prefix]</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">requiredrole<span> - Specifies what role each command requires.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Configuration</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++requiredrole</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++requiredrole<Command Name> <"none" | Tagged Role | Role ID String></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">slash<span> - Allows the bot developers to manage existing slash commands</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Development</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++slash</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++slash["delete"] [command ID]</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">ani<span> - Returns information on animes(streaming links, desc, episodes, etc.)</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Anime</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++ani</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++ani<optional-episode-number> <name-of-anime(REQUIRED TO BE IN QUOTES, "naruto shippuden)>"</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">collect<span> - returns args only in quotes</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">NSFW</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++collect</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++collect</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">anime<span> - Search for any anime episode streaming OR download link!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Anime</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++anime</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++anime<download-or-stream(d-dwn | s-str)> <anime-name> <anime-episode(optional)></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">getanime<span> - Search for any anime episode streaming OR download link!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Anime</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++getanime</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++getanime</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">arrest<span> - Put another user behind bars!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++arrest</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++arrest<@user></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">ass<span> - Sends a random picture of ASS</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">NSFW</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++ass</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++ass</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">awooify<span> - Distort an image!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++awooify</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++awooify<image-url-OR-user@></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">boobs<span> - Sends a random picture of BOOBS</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">NSFW</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++boobs</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++boobs</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">checkvote<span> - Checks if you have voted.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">General</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++checkvote</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++checkvote</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">clydify<span> - Clydify some text!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++clydify</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++clydify</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">coda<span> - Returns entire CODE of a code.org game or app lab project.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">General</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++coda</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++coda<link of project> !!APP OR GAME LAB ONLY!!</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">createemoji<span> - Create a new emoji!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Moderation</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++createemoji</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++createemoji<image-url> <emoji-name></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">jj<span> - Returns info from the code.org documents.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">General</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++jj</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++jj</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">kannaify<span> - Kannafy some text!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++kannaify</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++kannaify</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">kill<span> - Murder another user!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++kill</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++kill<@user></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">listemojis<span> - Sends every emoji in the discord server.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++listemojis</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++listemojis</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">magik<span> - Distort an image!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++magik</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++magik<image-url-OR-user@> <intensity(1-10)></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">mute<span> - Prevent a user from talking.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Moderation</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++mute</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++mute<@user> <reason></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">nsfw<span> - Sends an nsfw picture of whatever you please (from a list of course ;))</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">NSFW</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++nsfw</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++nsfw<type-of-nsfw></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">pfp<span> - Sends every emoji in the discord server.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++pfp</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++pfp<@user></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">phcomment<span> - Create your own phub comment!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++phcomment</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++phcomment</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">ping<span> - Returns bot and api speeds</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++ping</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++ping</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">purge<span> - Deletes a number of messages in the current channel.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Moderation</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++purge</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++purge<#-to-delete></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">quote<span> - Returns motivational, entrepreneur, education, or programming quotes.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++quote</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++quote<type-of-quote(do ++quote help for categories)></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">rainbowify<span> - Turn another users pfp rainbow</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++rainbowify</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++rainbowify<@user></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">request<span> - Request a new feature for my developer to add!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Development</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++request</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++request<Feature-you-want-added(Minimum of 5 words)></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">rr<span> - Create reaction roles for your server!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Configuration</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++rr</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++rr<Emoji> <Role name, tag, or ID> <Role display name></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">rrmsg<span> - Set the reactionroles message for your server</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Configuration</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++rrmsg</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++rrmsg[Channel tag] <Message text></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">tinyurl<span> - Shortens a sent url using the tinyurl api.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">General</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++tinyurl</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++tinyurl<url></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">slowmode<span> - Set the slowmode of the current channel.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Moderation</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++slowmode</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++slowmode<time-in-seconds> <optional:reason></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">srcbin<span> - Sends a sourcebin of some given code!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">General</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++srcbin</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++srcbin<file-language(no abreviations!)> <text to srcbin></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">starboard<span> - Pins a message to your the starboard on your server</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++starboard</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++starboard<message-id></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">trap<span> - Trap another user!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++trap</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++trap<user@></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">tweet<span> - Create your own tweet!</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Fun</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++tweet</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++tweet</p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">unmute<span> - Un-mutes a user.</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">Moderation</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++unmute</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++unmute<user@-or-id></p>
+						</div>
+						<br>
+						<br>
+						<button type="button" class="collapsible">uptime<span> - Returns bot and api speeds</span></button>
+						<div class="content">
+						<h4 style="color: rgb(169, 247, 247);">Category:</h4>
+						<p style="color: aqua;">General</p>
+						<h4 style="color: #cccccc;">Usage:</h4>
+						<p>++uptime</p>
+						<h4 style="color: #cccccc;">Examples:</h4>
+						<p>++uptime</p>
+						</div>
+						<br>
+						<br>
+        </div>
+    </div>
+    </div>
+
+    <footer class="mastfoot mb-auto">
+            <div class="container-fluid mb-auto">
+                <div class="row d-flex justify-content-center">
+                    <div class="">
+                        <p style="font-size: 19px; padding: 0px; margin: 0px;"><a href="https://github.com/Hadi-Koubeissi"
+                                style="text-decoration: none; color: white;">Made with 💖 by Asuna</a></br>Ahega0 ©
+                            2021. All
+                            rights reserved.</br>[<a href="./license.html"><b>Terms Of Use</b></a>]</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
